@@ -29,8 +29,22 @@ class Rectangle2 {
         return (this.width + this.height)*2;
     }
 
+    draw(){
+        let ctx = document.getElementById("ka").getContext("2d");
+        ctx.fillStyle = "#c726c2";
+        ctx.fillRect(0, 0, this.width, this.height);
+    }
+
 }
+//Khai báo lớp
 
 // tao doi tuong
-let dtCuaKA = new Rectangle(7, 5);
+let dtCuaKA = new Rectangle2(70, 50);
 let dkCuaKA = new Rectangle2(6, 3);
+dtCuaKA.draw();
+
+
+//sử dụng phương thức của đối tượng
+//Tên đối tượng.tên của phương thưc()
+console.log(dkCuaKA.getP());
+console.log(dtCuaKA.getS());
